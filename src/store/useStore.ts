@@ -318,7 +318,7 @@ function loadState(): AppState {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return defaultState;
     return { ...defaultState, ...JSON.parse(raw) };
-  } catch {
+  } catch (_e) {
     return defaultState;
   }
 }
@@ -326,7 +326,7 @@ function loadState(): AppState {
 function saveState(state: AppState) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  } catch {}
+  } catch (_e) { /* ignore */ }
 }
 
 let globalState: AppState = loadState();

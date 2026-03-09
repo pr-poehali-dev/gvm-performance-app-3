@@ -1,0 +1,20 @@
+{
+  "name": "GVM Performance",
+  "short_name": "GVM",
+  "description": "Премиальный учёт обслуживания автомобиля",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080d08",
+  "theme_color": "#39d353",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["auto", "utilities"],
+  "lang": "ru"
+}
